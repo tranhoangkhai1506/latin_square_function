@@ -1,15 +1,15 @@
 #include<stdio.h>
 
-void latin_square(int arr[][100], int limit){				//			T(n)
-	for(int row = 0; row < limit; row++)					//				n
+void latin_square(int arr[][100], int limit){				//		T(n)
+	for(int row = 0; row < limit; row++)					//		n
       { 
             for(int column = 0; column < limit; column++)			//			n
             {	
-                  arr[row][column] = (row + column + limit) % limit + 1;	//		1
+                  arr[row][column] = (row + column + limit) % limit + 1;	//				1
 		    }
-      }														//			T(n) = n * (n * 1)
-      														//				 = n^2 
-}
+      }								//			T(n) = n * (n * 1)
+      							//					= n^2
+	
 int main()
 {
       int limit;
