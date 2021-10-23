@@ -14,9 +14,9 @@ int main()
 {
       int limit;
       int arr[100][100];
-      printf("Enter the limit:\t");
+      printf("Nhap gioi han:\t");
       scanf("%d",&limit);
-      printf("\nLatin Square Matrix\n");
+      printf("\nMa tran hoan vi voi %d la:\n", limit);
       latin_square(arr, limit);
       for(int row = 0; row < limit; row++)
       {
